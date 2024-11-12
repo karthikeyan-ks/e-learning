@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; /* Ensures the body takes the full height of the viewport */
+    background-color: #000; /* Optional background color */
+}
+
+.gradient-container1 {
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.gradient-circle1 {
+    position: absolute; /* Position the circle relative to its container */
+    width: 40vw; /* Adjust width based on viewport width */
+    height: 40vw; /* Use the same unit for height to maintain the circular shape */
+    border-radius: 50%;
+    background: #00D5FF;
+    filter: blur(200.15px);
+    right: -20vw; /* Push the circle half out of the screen on the right side */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .gradient-circle1 {
+        width: 50vw; /* Increase the circle size on smaller screens */
+        height: 50vw;
+        right: -25vw; /* Adjust the right property to keep the circle off-screen */
+    }
+}
+
+/* Media query for very small screens */
+@media (max-width: 480px) {
+    .gradient-circle1 {
+        width: 60vw; /* Further increase the circle size on mobile */
+        height: 60vw;
+        right: -30vw; /* Adjust for smaller screens */
+    }
+}
