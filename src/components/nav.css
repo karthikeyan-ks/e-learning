@@ -1,49 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
 .nav-wrapper {
-    position: relative; /* Positioning context for the logo */
-  }
-  
-  .nav-logo {
-    position: absolute; /* Position the logo absolutely */
-    top: 0; /* Align to the top */
-    left: 0; /* Align to the left */
-    margin: 1rem; /* Optional: Add some space from the edges */
-    width: 50px; /* Adjust logo size */
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #1e1e1e; /* Dark background */
-    padding: 1rem;
-    border-radius: 20px; /* Rounded corners at the bottom */
-    width: fit-content; /* Adapts to content width */
-    margin: 0 auto; /* Centers the navbar horizontally */
-    position: fixed; /* Fixed at the top */
-    top: 2%; /* Align at the top */
-    left: 50%; /* Start positioning from the center */
-    transform: translateX(-50%); /* Center the navbar */
-    z-index: 1000; /* Stays above other elements */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  }
-  
-  .nav-list {
-    list-style: none;
-    display: flex;
-    gap: 5rem; /* Spacing between items */
-    margin: 0;
-    padding: 0 3rem 0 3rem;
-  }
-  
-  .nav-item {
-    gap: 3rem;
-    color: white;
-    cursor: pointer;
-    font-size: 1.2rem;
-    transition: color 0.3s;
-  }
-  
-  .nav-item:hover {
-    color: #aaaaaa; /* Change color on hover */
-  }
-  
+  position: relative;
+}
+
+.nav-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 1rem;
+  width: 50px;
+}
+
+.nav-item-link {
+  color: inherit;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 20px;
+  width: fit-content;
+  margin: 0 auto;
+  position: fixed;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 5rem;
+  margin: 0;
+  padding: 0 3rem 0 3rem;
+}
+
+.nav-item {
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-item:hover {
+  color: #aaaaaa;
+}

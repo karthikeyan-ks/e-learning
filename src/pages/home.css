@@ -1,0 +1,105 @@
+.container {
+    display: flex;
+    justify-content: flex-start; /* Align items to the start (left side) */
+    align-items: center; /* Vertically center both sections */
+    width: 100%; /* Full width */
+  }
+  
+  .spline-container {
+    width: 150%; /* Increased width for a larger Spline */
+    height: 100vh; /* Increased height for a larger Spline */
+    max-width: 1200px; /* Optional, for responsiveness */
+    margin-left: auto; /* This will push the Spline to the far right */
+  }
+  
+  .highlight {
+    margin-left: 4%;
+    font-size: 3rem; /* Adjust as needed */
+    font-weight: bold;
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5rem;
+    background: linear-gradient(to bottom, #00D4FF, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    flex: none;
+  }
+  
+  .text1, h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 98px;
+    color: #FFFFFF;
+    line-height: 1;
+    flex: none;
+  }
+  
+
+  .container {
+    display: flex;
+    justify-content: space-between; /* Create space between the sections */
+    align-items: center; /* Vertically center both sections */
+    width: 100%; /* Full width */
+  }
+  
+  .spline-container {
+    width: 75vw; /* Increase width to 75% of the viewport width */
+    height: 75vh; /* Increase height to 75% of the viewport height */
+    max-width: none; /* No max width to allow the increased size */
+    margin-left: auto; /* Push the Spline to the right-most side */
+  }
+  .text1{
+    padding-left: 10%;
+  }
+  
+  .highlight {
+    margin-left: 4%;
+    font-size: 3rem; /* Adjust as needed */
+    font-weight: bold;
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5rem;
+    background: linear-gradient(to bottom, #00D4FF, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    flex: none;
+  }
+  
+   h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 98px;
+    color: #FFFFFF;
+    line-height: 1;
+    flex: none;
+  }
+  p{
+    font-size: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Stack the sections on mobile */
+    }
+  
+    .spline-container {
+      width: 100%; /* Full width on mobile */
+      height: 60vh; /* Reduced height for mobile */
+      margin-left: 0; /* Remove left margin for mobile */
+    }
+  }
+  
