@@ -1,17 +1,20 @@
-import React from 'react';
-import Navbar from './compunents/nav'; 
-import GradientCircles from './compunents/BlueGradientBackground';
-// Ensure this matches the correct path and the default export
-import GradientCirclesright from './compunents/GradientCirclesright';
+import Navbar from './components/nav';
+import { Home } from './pages/home';
+import GradientCirclesright from './components/GradientCirclesright';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 // Adjust the path if needed
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <GradientCircles />
-      <GradientCirclesright />
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route element={<Home/>} path='/'/>
+        </Routes>
+        <GradientCirclesright />
+      </BrowserRouter>
     </div>
   );
 }

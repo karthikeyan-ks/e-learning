@@ -1,6 +1,5 @@
-import React from 'react';
+
 import './nav.css';
-import logo from '../Static/image/logo.svg'; // Import the SVG logo
 
 const Nav = () => {
   return (
