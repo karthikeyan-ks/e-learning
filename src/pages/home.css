@@ -58,7 +58,21 @@
   .text1{
     padding-left: 10%;
   }
-  
+  .Connect-button {
+    /* Auto layout */
+    display: flex;
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
+    padding: 1rem 2rem; /* Responsive padding */
+    width: 50%; /* Button width adjusts based on viewport size */
+    height: auto; /* Let the height adjust automatically */
+    font-size: 1.5rem; /* Responsive font size */
+    background: #00D5FF;
+    border-radius: 10px;
+    text-align: center; /* Ensures the text is centered if wrapping occurs */
+    cursor: pointer; 
+    margin-top: 5%;/* Add pointer cursor to indicate it's clickable */
+  }
   .highlight {
     margin-left: 4%;
     font-size: 3rem; /* Adjust as needed */
@@ -82,13 +96,15 @@
     font-style: normal;
     font-weight: 700;
     font-size: 5rem;
-    line-height: 98px;
+    
     color: #FFFFFF;
     line-height: 1;
     flex: none;
   }
   p{
-    font-size: 10px;
+    font-size: 20px;
+    line-height: 1;
+    margin-top: 5%;
   }
   
   @media (max-width: 768px) {

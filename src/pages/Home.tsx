@@ -10,7 +10,12 @@ const Home = () => {
           <span className="highlight">Grow Fast</span> <br />
           Achieve More
         </h1>
-        <p>Lorem ipsum dolor sit amet consectetur.<br></br> Ac integer elit mi turpis vel bibendum egestas volutpat. Curabitur magna ipsum eget turpis aenean dictum</p>
+        
+        <p>Lorem ipsum dolor sit amet consectetur. Ac integer elit mi <br></br>turpis vel bibendum egestas volutpat.
+        Curabitur magna ipsum eget 
+        <br></br>turpis aenean dictum</p>
+        
+        <button className='Connect-button'> Connect Us</button>
       </div>
       <main className="spline-container">
         <Spline
