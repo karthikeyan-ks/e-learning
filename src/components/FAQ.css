@@ -1,0 +1,57 @@
+/* Apply Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+.faq-section {
+  background-color: cyan;
+  color: white;
+  padding: 20px;
+  
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+}
+
+.faq-section h1 {
+  text-align: left;
+  font-size: 40px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 100;
+  font-size: 20px;
+
+}
+
+.faq-item .question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid white; /* Line under the question */
+  padding-bottom: 5px;
+}
+
+.faq-item .question h2 {
+  margin: 0;
+  font-weight: 600; /* Semibold font */
+}
+
+.faq-item .answer {
+  margin-top: 10px;
+}
+
+.faq-item .icon {
+  font-size: 18px;
+}
+
+.faq-item .icon.open {
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+}
+
+.faq-item .icon.closed {
+  transition: transform 0.3s;
+}

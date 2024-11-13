@@ -5,6 +5,9 @@ import { motion } from 'framer-motion'; // Import motion for animation
 import logo from '../Static/image/image.png';
 import logo1 from '../Static/image/image2.png';
 import logo2 from '../Static/image/image3.png';
+import logo3 from '../Static/image/image4.png'
+import logo4 from '../Static/image/image copy 2.png'
+import FAQSection from '../components/FAQitem';
 
 const Home = () => {
   // State to manage the order of the images
@@ -13,7 +16,7 @@ const Home = () => {
   // Array of images to cycle
   const images = [logo, logo1, logo2];
 
-  // Set an interval to update the image order every 5 seconds
+  // Set an interval to update the image order every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setImageOrder((prevOrder) => {
@@ -22,7 +25,7 @@ const Home = () => {
         newOrder.push(newOrder.shift()); // Move the first element to the end
         return newOrder;
       });
-    }, 5000); // Every 5 seconds
+    }, 3000); // Update every 3 seconds
 
     return () => clearInterval(interval); // Clean up interval on component unmount
   }, []);
@@ -77,6 +80,7 @@ const Home = () => {
           <img src={images[imageOrder.indexOf('main')]} alt="Main Image" />
         </motion.div>
 
+        {/* Side Images */}
         <div className="side-images">
           {/* Top Image */}
           <motion.div
@@ -98,7 +102,50 @@ const Home = () => {
             <img src={images[imageOrder.indexOf('bottom')]} alt="Bottom Image" />
           </motion.div>
         </div>
+
+        {/* Side Text */}
+        <div className="side-text">
+          <motion.div
+            className="text-left"
+            initial={{ opacity: 0, x: -50 }} // Initial state: hidden and to the left
+            animate={{ opacity: 1, x: 0 }} // Animate to visible and centered
+            transition={{ duration: 1, delay: 1.2 }} // Delay before animation starts
+          >
+            <h2>Who Are we..?</h2>
+            <h3><a style={{ textDecoration: 'none', color: 'inherit' }}>View more-&gt;</a></h3>
+
+          </motion.div>
+        </div>
       </div>
+      <div className='program section'>
+      <div className='program-text'>
+        <h1>Our Program</h1>
+      </div>
+      <div className='rect'>
+        <img src={logo3}></img>
+        <p>Workshop</p>
+      </div>
+      <div className='but'>
+      <button className='programbu'>view all</button>
+      </div>
+    </div>
+    <div className="ai-image-section">
+  {/* New text container above the banner */}
+ 
+  
+  <div className="image-banner">
+  <img src={logo4} alt="AI Banner" />
+  {/* Text inside the banner */}
+  <div className="banner-text">
+    <h1>Why are you<br></br> doubting?</h1>
+    <h3>Let’s turn the world upside 
+    <br></br>down with us.</h3>
+    <button>JOIN NOW</button>
+  </div>
+</div>
+
+</div>
+<FAQSection />
     </div>
   );
 };
