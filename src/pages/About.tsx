@@ -1,51 +1,36 @@
 import React from 'react';
-import './AboutUs.css';
-import { motion } from 'framer-motion'; // Import motion for animation
-import logo from '../Static/image/image.png';
-import logo1 from '../Static/image/image2.png';
-import logo2 from '../Static/image/image3.png';
+import './AboutUs.css'; // Ensure you create this CSS file
+import logo from '../Static/image/image copy 3.png';
+import logo1 from '../Static/image/image copy 4.png'
 
-const AboutUs = () => {
+const About = () => {
   return (
-    <div className="container">
-      {/* Rectangle above the main image */}
-      <motion.div
-        className="rectangle"
-        initial={{ opacity: 0, y: -50 }} // Initial state: hidden and above
-        animate={{ opacity: 1, y: 0 }} // Animate to visible and centered
-        transition={{ duration: 1 }} // Duration of the animation
-      />
+    <div className="app-container">
+      {/* Main Heading */}
+      <section className="main-heading">
+        <h1>We specialize in creating better<br></br>
+        world for a better tomorrow</h1>
+      </section>
 
-      <motion.div
-        className="main-image"
-        initial={{ opacity: 0, scale: 0.8 }} // Initial state: hidden and smaller
-        animate={{ opacity: 1, scale: 1 }} // Animate to visible and normal size
-        transition={{ duration: 1.5, delay: 0.5 }} // Duration of animation with delay
-      >
-        <img src={logo} alt="Main Image" />
-      </motion.div>
-
-      <div className="side-images">
-        <motion.div
-          className="side-image top-side-image"
-          initial={{ opacity: 0, x: -100 }} // Initial state: hidden and to the left
-          animate={{ opacity: 1, x: 0 }} // Animate to visible and original position
-          transition={{ duration: 1, delay: 0.5 }} // Duration with delay
-        >
-          <img src={logo1} alt="Top Right Image" />
-        </motion.div>
-
-        <motion.div
-          className="side-image bottom-side-image"
-          initial={{ opacity: 0, x: 100 }} // Initial state: hidden and to the right
-          animate={{ opacity: 1, x: 0 }} // Animate to visible and original position
-          transition={{ duration: 1, delay: 1 }} // Duration with delay
-        >
-          <img src={logo2} alt="Bottom Right Image" />
-        </motion.div>
+      {/* Image Grid */}
+      <div className="image-grid">
+        
+        <img src={logo1} alt="Image 1" />
       </div>
+
+      {/* Paragraphs and Second Image Row */}
+      <section className="text-section">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet at sit ad odio condimentum dui quis donec. Et a eu pulvinar ut nullam sed ipsum aliquet. Ipsum quis et arcu enim viverra diam.</p>
+        <div className="image-row">
+          <div className="image-item">
+            <img src={logo} alt="Image 6" />
+          </div>
+          
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non at sit lacinia hac. Vivamus morbi arcu gravida egestas volutpat.</p>
+      </section>
     </div>
   );
 };
 
-export default AboutUs;
+export default About;
