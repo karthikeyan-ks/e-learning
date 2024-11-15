@@ -15,9 +15,14 @@ const Home = () => {
 
   // Array of images to cycle
   const images = [logo, logo1, logo2];
+  const [data, setData] = useState(null);
 
   // Set an interval to update the image order every 3 seconds
   useEffect(() => {
+    fetch('http://127.0.0.1:8000/api/data/') // Ensure the Django server is running
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.error('Error fetching data:', error));
     const interval = setInterval(() => {
       setImageOrder((prevOrder) => {
         // Shift the images by rotating the positions
@@ -26,6 +31,7 @@ const Home = () => {
         return newOrder;
       });
     }, 3000); // Update every 3 seconds
+
 
     return () => clearInterval(interval); // Clean up interval on component unmount
   }, []);
@@ -39,12 +45,12 @@ const Home = () => {
         animate={{ opacity: 1, y: 0 }} // Animate to visible and centered
         transition={{ duration: 3 }} // Duration of the animation
       >
-         <div className='gradient-container'>
+        <div className='gradient-container'>
           <div className="circle">
 
           </div>
         </div>
-       
+
         <div className="text1">
           <h1>
             Learn Smart <br />
