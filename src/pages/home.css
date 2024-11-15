@@ -212,10 +212,18 @@
   }
   .side-text a{
     text-decoration: none;
-  
-  color: 'inherit';
+    color: 'inherit';
+    align-items: right;
+    justify-content: flex-start;
   }
-
+.text-left {
+  justify-content: flex-end;
+  align-items:right;
+  font-size: 1rem; 
+  color: #ffffff;
+  margin: 1rem 0; 
+  line-height: 1.5;
+}
   /* Make the right-side image landscape */
   .bottom-side-image {
     width: 500px; 
@@ -252,18 +260,27 @@
     
     align-content: center;
   }
-  .programbu{
-   
-    width: fit-content;
-    height: fit-content;
-    background: #00D4FF;
-  }
   button{
     background: #00D4FF;
   }
-  .bu{
-    padding-top: 5%;
-    }
+  .but {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers vertically if needed */
+    margin-top: 2rem; /* Optional: adjust as needed */
+  }
+  
+  .programbu {
+    padding: 1rem 2rem; /* Adjust padding for size */
+    background-color: #00D4FF; /* Button background color */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    font-size: 1.5rem; /* Adjust font size */
+    cursor: pointer;
+    text-align: center;
+  }
+  
     .image-banner {
       padding-top: 5%;
       position: relative; /* Positioning context for the overlay */

@@ -141,6 +141,8 @@ const Home = () => {
             transition={{ duration: 1, delay: 1.2 }} // Delay before animation starts
           >
             <h2>Who Are we..?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Ac integer elit mi <br />turpis vel bibendum egestas volutpat.
+            Curabitur magna ipsum eget</p>
             <h3><a style={{ textDecoration: 'none', color: 'inherit' }}>View more-&gt;</a></h3>
 
           </motion.div>

@@ -1,0 +1,104 @@
+.prg-text1{
+    width: 720px;
+    height: 150px;
+    font-size: 55%;
+    padding-left: 5%;
+    top: 20%;
+}
+.prg-text1 h1{
+    font-size: 55px;
+    font-weight: 600;
+}
+.prg-continer{
+    padding-left: 5%;
+    width: 29vw;
+    height: 19vw;
+    border: 2px solid rgb(252, 250, 250); 
+    
+}
+.prgm-main{
+    padding-left: 20%;
+}
+
+.prg-continer {
+    padding-left: 2%;
+    padding-right: 2%;
+    left: 10%;
+     width: 29vw;
+     height: 19vw;
+     border: 2px solid rgb(252, 250, 250);
+     display: flex;
+     flex-direction: column; /* Stack items vertically (image above text) */
+     align-items: center; /* Center the content horizontally */
+     justify-content: center; /* Optional: Center vertically within the container */
+   }
+   .program-main{
+     padding-left: 10%;
+   }
+   .pgrm-main{
+    padding-left: 20%;
+   }
+   .pgm {
+     display: flex;
+     flex-direction: column; /* Stack image and text vertically */
+     align-items: center; 
+     left: 10%;/* Center items horizontally */
+   }
+   
+   .image-prg {
+     width: 100%; /* Make sure the image takes full width of its container */
+     margin-bottom: 10px; /* Add some space between the image and the text */
+   }
+   
+   .image-prg img {
+     width: 100%; /* Ensure the image is responsive */
+     height: auto; /* Maintain aspect ratio */
+   }
+   
+   .pgm-text2 {
+     text-align: left;
+     width: 70%; /* Center the text below the image */
+   }
+   
+   .pgm-text2 h1 {
+     font-size: 24px;
+     font-weight: 600;
+   }
+   
+   .pgm-text2 p {
+     font-size: 16px;
+     line-height: 1.5;
+   }
+   /* Keep your existing styles as they are */
+/* Keep your existing styles as they are */
+
+.arrow-button {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10px;
+    background-color: #63d2dc; /* Example background color */
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute; /* This will position the button relative to its parent */
+    right: -8%; /* Move the button to the right */
+    bottom: 12px; /* Align it slightly above the bottom */
+  }
+  
+  .arrow-button:hover {
+    background-color: #63d2dc; /* Darker green when hovered */
+  }
+  
+  .arrow-icon {
+    margin-left: 8px; /* Space between text and arrow */
+    width: 20px; /* Set size for the arrow */
+    height: 20px;
+  }
+  
+  .pgm-text2 {
+    position: relative; /* Make the container relative to position the button inside */
+  }
+  
+      
