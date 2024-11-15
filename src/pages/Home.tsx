@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Spline from '@splinetool/react-spline';
 import './home.css'; // Import your custom CSS for styling
 import { motion } from 'framer-motion'; // Import motion for animation
@@ -39,6 +39,12 @@ const Home = () => {
         animate={{ opacity: 1, y: 0 }} // Animate to visible and centered
         transition={{ duration: 3 }} // Duration of the animation
       >
+         <div className='gradient-container'>
+          <div className="circle">
+
+          </div>
+        </div>
+       
         <div className="text1">
           <h1>
             Learn Smart <br />
@@ -63,12 +69,7 @@ const Home = () => {
       {/* New Section Below the First */}
       <div className="container">
         {/* Rectangle above the main image */}
-        <motion.div
-          className="rectangle"
-          initial={{ opacity: 0, y: -50 }} // Initial state: hidden and above
-          animate={{ opacity: 1, y: 0 }} // Animate to visible and centered
-          transition={{ duration: 1 }} // Duration of the animation
-        />
+
 
         {/* Main Image */}
         <motion.div
@@ -77,11 +78,39 @@ const Home = () => {
           animate={{ opacity: 1, scale: 1 }} // Animate to visible and normal size
           transition={{ duration: 1.5, delay: 0.5 }} // Duration of animation with delay
         >
+          <div className='main-image-top'>
+            <motion.div
+              className="rectangle"
+              initial={{ opacity: 0, y: -50 }} // Initial state: hidden and above
+              animate={{ opacity: 1, y: 0 }} // Animate to visible and centered
+              transition={{ duration: 1 }} // Duration of the animation
+            />
+            <div className='ball'>
+
+            </div>
+          </div>
+
           <img src={images[imageOrder.indexOf('main')]} alt="Main Image" />
         </motion.div>
 
         {/* Side Images */}
         <div className="side-images">
+          <div className='main-image-top'>
+            <motion.div
+              className="rectangle"
+              initial={{ opacity: 0, y: -50 }} // Initial state: hidden and above
+              animate={{ opacity: 1, y: 0 }} // Animate to visible and centered
+              transition={{ duration: 1 }} // Duration of the animation
+            />
+            <div className='ball'>
+            </div>
+            <motion.div
+              className="rectangle"
+              initial={{ opacity: 0, y: -50 }} // Initial state: hidden and above
+              animate={{ opacity: 1, y: 0 }} // Animate to visible and centered
+              transition={{ duration: 1 }} // Duration of the animation
+            />
+          </div>
           {/* Top Image */}
           <motion.div
             className="side-image top-side-image"
@@ -118,34 +147,34 @@ const Home = () => {
         </div>
       </div>
       <div className='program section'>
-      <div className='program-text'>
-        <h1>Our Program</h1>
+        <div className='program-text'>
+          <h1>Our Program</h1>
+        </div>
+        <div className='rect'>
+          <img src={logo3}></img>
+          <p>Workshop</p>
+        </div>
+        <div className='but'>
+          <button className='programbu'>view all</button>
+        </div>
       </div>
-      <div className='rect'>
-        <img src={logo3}></img>
-        <p>Workshop</p>
-      </div>
-      <div className='but'>
-      <button className='programbu'>view all</button>
-      </div>
-    </div>
-    <div className="ai-image-section">
-  {/* New text container above the banner */}
- 
-  
-  <div className="image-banner">
-  <img src={logo4} alt="AI Banner" />
-  {/* Text inside the banner */}
-  <div className="banner-text">
-    <h1>Why are you<br></br> doubting?</h1>
-    <h3>Let’s turn the world upside 
-    <br></br>down with us.</h3>
-    <button>JOIN NOW</button>
-  </div>
-</div>
+      <div className="ai-image-section">
+        {/* New text container above the banner */}
 
-</div>
-<FAQSection />
+
+        <div className="image-banner">
+          <img src={logo4} alt="AI Banner" />
+          {/* Text inside the banner */}
+          <div className="banner-text">
+            <h1>Why are you<br></br> doubting?</h1>
+            <h3>Let’s turn the world upside
+              <br></br>down with us.</h3>
+            <button>JOIN NOW</button>
+          </div>
+        </div>
+
+      </div>
+      <FAQSection />
     </div>
   );
 };
