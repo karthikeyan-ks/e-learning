@@ -45,24 +45,20 @@
   }
   .gradient-container {
     display: flex;
-    justify-content: flex-start; /* Align to the left */
-    align-items:flex-end;
-    width: 100%;
+/* Align to the left */
+    
+    width: 40%;
     height: 100%;
-    margin-left: -10%;
+    margin-left: 2%;
     position: relative;
   }
-  .circle{
-    position: absolute; /* Position the circle relative to its container */
-    width: 50vh; /* Adjust width as needed */
-    height: 50vh; /* Adjust height as needed */
-    border-radius: 50%;
-    background: #00D5FF;
-    filter: blur(200.15px);
-  }
+ 
 
   .container1 {
     display: flex;
+    display: flex;
+    justify-content: flex-start; /* Align to the left */
+    align-items:flex-end;
     justify-content: space-between; /* Create space between the sections */
     align-items: center; /* Vertically center both sections */
     width: 100%; /* Full width */

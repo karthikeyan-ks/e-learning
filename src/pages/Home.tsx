@@ -8,7 +8,7 @@ import logo2 from '../Static/image/image3.png';
 import logo3 from '../Static/image/image4.png'
 import logo4 from '../Static/image/image copy 2.png'
 import FAQSection from '../components/FAQitem';
-
+import Cirlce from '../components/BlueGradientBackground'
 const Home = () => {
   // State to manage the order of the images
   const [imageOrder, setImageOrder] = useState(['main', 'top', 'bottom']);
@@ -37,8 +37,12 @@ const Home = () => {
   }, []);
 
   return (
+
     <div>
       {/* Applying motion to container1 */}
+      <Cirlce />
+      <div className='section1 '>
+
       <motion.div
         className="container1"
         initial={{ opacity: 0, y: -500 }} // Initial state: hidden and above
@@ -69,9 +73,11 @@ const Home = () => {
           <Spline
             scene="https://prod.spline.design/lHyNMWDWdxR-omhL/scene.splinecode"
           />
+          
         </main>
+        
       </motion.div>
-
+      </div>
       {/* New Section Below the First */}
       <div className="container">
         {/* Rectangle above the main image */}

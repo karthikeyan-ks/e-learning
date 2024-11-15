@@ -12,7 +12,7 @@ const Program = () => {
         <div className='prg-continer'>
           <div className='pgm'>
             <div className='image-prg'>
-              <img src={logo} alt="Program Logo" />
+              <img src={logo} alt="Program Logo"/>
             </div>
             <div className='pgm-text2'>
               <h1>WorkShop</h1>

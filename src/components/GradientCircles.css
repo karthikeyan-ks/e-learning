@@ -1,31 +1,29 @@
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%; /* Ensures the body takes the full height of the viewport */
-    background-color: #000; /* Optional background color */
-  }
-  
-  .gradient-container {
-    display: flex;
-    justify-content: flex-start; /* Align to the left */
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    max-height: 90vh; /* Maximum height set to 90% of the viewport height */
-    position: relative;
-  }
-  
-  .gradient-circle {
-    position: absolute; /* Position the circle relative to its container */
-    width: 50vh; /* Adjust width as needed */
-    height: 50vh; /* Adjust height as needed */
-    border-radius: 50%;
-    background: #00D5FF;
-    filter: blur(200.15px);
-    left: -100.5vh; /* Move the circle half out of the screen (since its width is 65vh, half of it is 32.5vh) */
-  }
-  
+/* Semi-circle container on the left */
+.semi-circle-container {
+  position: absolute;
+  top: 50%; /* Centers vertically */
+  left: -75vh; /* Aligns it partially to the left edge */
+  transform: translateY(-50%); /* Ensures the top-left corner is in the center */
+  width: 90vh; /* Adjust width to control diameter */
+  height: 90vh; /* Half of the width to create a semi-circle */
+  border-radius: 50%; /* Creates a semi-circle */
+  background: #00D5FF;
+  filter: blur(380px); /* Adds the blur effect */
+  overflow: hidden;
+  z-index: -1; /* Keeps it behind content */
+}
+
+/* Semi-circle container on the right */
+.semi-circle-container-right {
+  position: absolute;
+  top: 50%; /* Centers vertically */
+  right: -75vh; /* Aligns it partially to the right edge */
+  transform: translateY(-50%); /* Ensures the top-right corner is in the center */
+  width: 90vh; /* Adjust width to control diameter */
+  height: 90vh; /* Half of the width to create a semi-circle */
+  border-radius: 50%; /* Creates a semi-circle */
+  background: #00D5FF;
+  filter: blur(380px); /* Adds the blur effect */
+  overflow: hidden;
+  z-index: -1; /* Keeps it behind content */
+}
