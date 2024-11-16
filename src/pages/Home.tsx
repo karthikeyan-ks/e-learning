@@ -8,7 +8,7 @@ import logo2 from '../Static/image/image3.png';
 import logo3 from '../Static/image/image4.png'
 import logo4 from '../Static/image/image copy 2.png'
 import FAQSection from '../components/FAQitem';
-import Cirlce from '../components/BlueGradientBackground'
+import GradientCircles from '../components/GradientCircles';
 const Home = () => {
   // State to manage the order of the images
   const [imageOrder, setImageOrder] = useState(['main', 'top', 'bottom']);
@@ -40,9 +40,9 @@ const Home = () => {
 
     <div>
       {/* Applying motion to container1 */}
-      <Cirlce />
+      
       <div className='section1 '>
-
+      <GradientCircles />
       <motion.div
         className="container1"
         initial={{ opacity: 0, y: -500 }} // Initial state: hidden and above
@@ -160,7 +160,9 @@ const Home = () => {
           </motion.div>
         </div>
       </div>
+     
       <div className='program section'>
+      
         <div className='program-text'>
           <h1>Our Program</h1>
         </div>
