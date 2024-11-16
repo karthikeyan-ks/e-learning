@@ -8,7 +8,7 @@ import logo2 from '../Static/image/image3.png';
 import logo3 from '../Static/image/image4.png'
 import logo4 from '../Static/image/image copy 2.png'
 import FAQSection from '../components/FAQitem';
-import GradientCircles from '../components/GradientCircles';
+
 const Home = () => {
   // State to manage the order of the images
   const [imageOrder, setImageOrder] = useState(['main', 'top', 'bottom']);
@@ -21,7 +21,7 @@ const Home = () => {
   useEffect(() => {
     fetch('http://127.0.0.1:8000/api/data/') // Ensure the Django server is running
       .then((response) => response.json())
-      .then((data) => console.log(data))
+      .then((data) => setData(data))
       .catch((error) => console.error('Error fetching data:', error));
     const interval = setInterval(() => {
       setImageOrder((prevOrder) => {
@@ -35,14 +35,13 @@ const Home = () => {
 
     return () => clearInterval(interval); // Clean up interval on component unmount
   }, []);
+  useEffect(() => {
+    console.log(data)
+  },[data])
 
   return (
-
     <div>
       {/* Applying motion to container1 */}
-      
-      <div className='section1 '>
-      <GradientCircles />
       <motion.div
         className="container1"
         initial={{ opacity: 0, y: -500 }} // Initial state: hidden and above
@@ -73,11 +72,9 @@ const Home = () => {
           <Spline
             scene="https://prod.spline.design/lHyNMWDWdxR-omhL/scene.splinecode"
           />
-          
         </main>
-        
       </motion.div>
-      </div>
+
       {/* New Section Below the First */}
       <div className="container">
         {/* Rectangle above the main image */}
@@ -154,15 +151,13 @@ const Home = () => {
           >
             <h2>Who Are we..?</h2>
             <p>Lorem ipsum dolor sit amet consectetur. Ac integer elit mi <br />turpis vel bibendum egestas volutpat.
-            Curabitur magna ipsum eget</p>
+              Curabitur magna ipsum eget</p>
             <h3><a style={{ textDecoration: 'none', color: 'inherit' }}>View more-&gt;</a></h3>
 
           </motion.div>
         </div>
       </div>
-     
       <div className='program section'>
-      
         <div className='program-text'>
           <h1>Our Program</h1>
         </div>
