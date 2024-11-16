@@ -12,10 +12,16 @@ import FAQSection from '../components/FAQitem';
 const Home = () => {
   // State to manage the order of the images
   const [imageOrder, setImageOrder] = useState(['main', 'top', 'bottom']);
+  type ProgramElement = {
+    name: string;
+    description: string;
+    image: string;
+  };
 
   // Array of images to cycle
   const images = [logo, logo1, logo2];
-  const [data, setData] = useState(null);
+  const [data, setData] = useState<ProgramElement[]>([]);
+  const [program, setProgram] = useState<JSX.Element[]>([]);
 
   // Set an interval to update the image order every 3 seconds
   useEffect(() => {
@@ -36,9 +42,24 @@ const Home = () => {
     return () => clearInterval(interval); // Clean up interval on component unmount
   }, []);
   useEffect(() => {
-    console.log(data)
-  },[data])
+    data.forEach(element => {
 
+      const image = "http://127.0.0.1:8000" + element.image
+      const elem = (
+        <>
+          <div className="rect">
+            <img src={image} alt="Workshop Logo" />
+            <p>{element.name}</p>
+          </div>
+        </>
+      );
+      console.log(elem, element)
+      setProgram(prev => [...prev, elem]);
+    });
+  }, [data])
+  useEffect(() => {
+    console.log(program.length)
+  }, [program])
   return (
     <div>
       {/* Applying motion to container1 */}
@@ -158,15 +179,15 @@ const Home = () => {
         </div>
       </div>
       <div className='program section'>
-        <div className='program-text'>
-          <h1>Our Program</h1>
+        <div className="program-text">
+          <h1>Events</h1>
         </div>
-        <div className='rect'>
-          <img src={logo3}></img>
-          <p>Workshop</p>
+        <div className="program-container">
+
+          {program}
         </div>
-        <div className='but'>
-          <button className='programbu'>view all</button>
+        <div className="but">
+          <button className="programbu">View All</button>
         </div>
       </div>
       <div className="ai-image-section">

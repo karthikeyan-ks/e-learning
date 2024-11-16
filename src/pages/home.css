@@ -276,6 +276,13 @@
     cursor: pointer;
     text-align: center;
   }
+  .program-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
   
     .image-banner {
       padding-top: 5%;
