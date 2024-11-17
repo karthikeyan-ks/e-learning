@@ -1,10 +1,12 @@
 import './program.css';
 import logo from '../Static/image/image copy 5.png';
-import arrow from '../Static/image/arrow.png'; // Path to your arrow image
+import arrow from '../Static/image/arrow.png'; 
+import GradientCircles from '../components/GradientCircles'; // Path to your arrow image
 
 const Program = () => {
   return (
     <div className='program-main'>
+      <GradientCircles />
       <div className='prg-text1'>
         <h1>Unlock your potential with our Programs</h1>
       </div>

@@ -8,7 +8,8 @@ import logo2 from '../Static/image/image3.png';
 import logo3 from '../Static/image/image4.png'
 import logo4 from '../Static/image/image copy 2.png'
 import FAQSection from '../components/FAQitem';
-
+import GradientCircles from '../components/GradientCircles';
+import Footer from '../components/footer';
 const Home = () => {
   // State to manage the order of the images
   const [imageOrder, setImageOrder] = useState(['main', 'top', 'bottom']);
@@ -22,6 +23,7 @@ const Home = () => {
   const images = [logo, logo1, logo2];
   const [data, setData] = useState<ProgramElement[]>([]);
   const [program, setProgram] = useState<JSX.Element[]>([]);
+  
 
   // Set an interval to update the image order every 3 seconds
   useEffect(() => {
@@ -63,6 +65,7 @@ const Home = () => {
   return (
     <div>
       {/* Applying motion to container1 */}
+      <GradientCircles />
       <motion.div
         className="container1"
         initial={{ opacity: 0, y: -500 }} // Initial state: hidden and above
@@ -178,7 +181,8 @@ const Home = () => {
           </motion.div>
         </div>
       </div>
-      <div className='program section'>
+      <div className='program-section'>
+        <GradientCircles />
         <div className="program-text">
           <h1>Events</h1>
         </div>
@@ -207,6 +211,7 @@ const Home = () => {
 
       </div>
       <FAQSection />
+      <Footer />
     </div>
   );
 };

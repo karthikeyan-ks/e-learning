@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Program from './pages/Program';
 import Contact from './pages/Contact';
+import Footer from './components/footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 // Adjust the path if needed
@@ -18,7 +19,7 @@ function App() {
           <Route element={<Program/>} path='/program'/>
           <Route element={<Contact/>} path='/contact'/>
         </Routes>
-       
+       <Footer />
       </BrowserRouter>
     </div>
   );

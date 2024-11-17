@@ -2,10 +2,13 @@ import React from 'react';
 import './AboutUs.css'; // Ensure you create this CSS file
 import logo from '../Static/image/image copy 3.png';
 import logo1 from '../Static/image/image copy 4.png'
+import GradientCircles from '../components/GradientCircles';
 
 const About = () => {
   return (
+    
     <div className="app-container">
+      <GradientCircles />
       {/* Main Heading */}
       <section className="main-heading">
         <h1>We specialize in creating better<br></br>
