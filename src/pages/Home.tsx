@@ -61,7 +61,6 @@ const Home = () => {
       </div>
 
       <div className="container1">
-      <GradientCircles /> 
         <div className="gradient-container">
           <div className="circle"></div>
         </div>
@@ -107,7 +106,7 @@ const Home = () => {
 
           <img src={images[imageOrder.indexOf('main')]} alt="Main Image" />
         </motion.div>
-       {/* Gradient Circles applied in the main section */}
+        <GradientCircles /> {/* Gradient Circles applied in the main section */}
         
         {/* Side Images */}
         <div className="side-images">
@@ -153,6 +152,7 @@ const Home = () => {
 
       {/* Programs Section */}
       <div className="program-section">
+      
         <div className="program-text">
          
           <h1>Programs</h1>
@@ -167,7 +167,7 @@ const Home = () => {
         </div>
 
         {/* Gradient Circles in Program Section */}
-        <GradientCircles /> {/* Added Gradient Circles here */}
+        {/* Added Gradient Circles here */}
       </div>
 
       <div className="ai-image-section">

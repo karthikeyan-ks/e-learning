@@ -10,6 +10,7 @@
   background: #00D5FF;
   filter: blur(380px); /* Adds the blur effect */
   overflow: hidden;
+  overflow-x: hidden;
   z-index: -1; /* Keeps it behind content */
 }
 
