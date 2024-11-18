@@ -351,8 +351,47 @@
   
   }
   
+  
   .navlogo {
       width: 150px;
       height: auto;
     }
   
+    /* Semi-circle container for the main section */
+.semi-circle-container-main {
+  position: absolute;
+  top: 50%;
+  left: -75vh;
+  transform: translateY(-50%);
+  width: 90vh;
+  height: 90vh;
+  border-radius: 50%;
+  background: #00D5FF;
+  filter: blur(380px);
+  overflow: hidden;
+  z-index: -1;
+}
+
+/* Semi-circle container for the program section */
+.semi-circle-container-program {
+  position: absolute;
+  top: 50%;
+  right: -75vh;
+  transform: translateY(-50%);
+  width: 90vh;
+  height: 90vh;
+  border-radius: 50%;
+  background: #00D5FF;
+  filter: blur(380px);
+  overflow: hidden;
+  z-index: -1;
+}
+
+/* Additional styling to ensure they are placed correctly */
+.container1 {
+  position: relative; /* This is for main section */
+}
+
+.program-section {
+  position: relative; /* This is for program section */
+}

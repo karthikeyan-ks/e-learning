@@ -1,20 +1,10 @@
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%; /* Ensures the body takes the full height of the viewport */
-    background-color: #000; /* Optional background color */
-}
 
 .gradient-container1 {
     display: block;
     width: 100%;
     height: 100%;
     right: -50%;
-    position: relative;
+    position: absolute;
 }
 
 .gradient-circle1 {
