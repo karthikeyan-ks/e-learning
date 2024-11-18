@@ -7,11 +7,13 @@ import logo2 from'../Static/image/logo.svg'
 import Footer from '../components/footer';
 const About = () => {
   return (
-    
-    <div className="app-container">
+    <div className='About-main'>
       <div className='logo-section'>
       <img src={logo2} alt="Logo" className="nav-logo" />
       </div>
+   
+    <div className="app-container">
+      
       <GradientCircles />
       {/* Main Heading */}
       <section className="main-heading">
@@ -37,6 +39,7 @@ const About = () => {
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non at sit lacinia hac. Vivamus morbi arcu gravida egestas volutpat.</p>
       </section>
       <Footer />
+    </div>
     </div>
   );
 };
