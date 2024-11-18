@@ -13,7 +13,7 @@
     height: 40vw; /* Use the same unit for height to maintain the circular shape */
     border-radius: 50%;
     background: #00D5FF;
-    filter: blur(200.15px);
+    filter: blur(380.15px);
     display: inline-block;
     right: -200%;
 }

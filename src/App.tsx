@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Program from './pages/Program';
 import Contact from './pages/Contact';
+import Events from './pages/Events';
 import Footer from './components/footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
@@ -18,6 +19,7 @@ function App() {
           <Route element={<About/>} path='/about'/>
           <Route element={<Program />} path='/program'/>
           <Route element={<Contact/>} path='/contact'/>
+          <Route element={<Events/>} path='/events'/>
         </Routes>
        
       </BrowserRouter>

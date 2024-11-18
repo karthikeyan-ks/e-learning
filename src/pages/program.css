@@ -16,7 +16,9 @@ padding-left: 10%;
     width: 20%;
 
 }
-
+.text3 h1{
+  font-size: 3rem;
+}
 .navlogo {
     width: 150px;
     height: auto;
@@ -50,7 +52,7 @@ padding-left: 10%;
   .text3{
     width: 100vh;
     margin-top: 5%;
-    font-size: 5rem;
+    font-size: 3rem;
   }
     .rectangle1 {
         position: absolute;
