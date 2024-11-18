@@ -9,8 +9,8 @@
 
 .gradient-circle1 {
     position: absolute; /* Position the circle relative to its container */
-    width: 40vw; /* Adjust width based on viewport width */
-    height: 40vw; /* Use the same unit for height to maintain the circular shape */
+    width: 30vw; /* Adjust width based on viewport width */
+    height: 30vw; /* Use the same unit for height to maintain the circular shape */
     border-radius: 50%;
     background: #00D5FF;
     filter: blur(380.15px);
