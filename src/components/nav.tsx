@@ -4,9 +4,7 @@ import logo from '../Static/image/logo.svg'
 const Nav = () => {
   return (
     <div className="nav-wrapper">
-      <div className='logo-section'>
-      <img src={logo} alt="Logo" className="nav-logo" />
-      </div>
+      
       <nav className="navbar">
         <ul className="nav-list">
           <li className="nav-item">

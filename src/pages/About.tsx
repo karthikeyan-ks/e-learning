@@ -3,11 +3,15 @@ import './AboutUs.css'; // Ensure you create this CSS file
 import logo from '../Static/image/image copy 3.png';
 import logo1 from '../Static/image/image copy 4.png'
 import GradientCircles from '../components/GradientCircles';
-
+import logo2 from'../Static/image/logo.svg'
+import Footer from '../components/footer';
 const About = () => {
   return (
     
     <div className="app-container">
+      <div className='logo-section'>
+      <img src={logo2} alt="Logo" className="nav-logo" />
+      </div>
       <GradientCircles />
       {/* Main Heading */}
       <section className="main-heading">
@@ -32,6 +36,7 @@ const About = () => {
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non at sit lacinia hac. Vivamus morbi arcu gravida egestas volutpat.</p>
       </section>
+      <Footer />
     </div>
   );
 };

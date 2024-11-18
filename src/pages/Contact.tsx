@@ -3,10 +3,14 @@ import Form from '../components/form';
 import './contact.css';
 import logo from '../Static/image/image copy 7.png';
 import GradientCircles from '../components/GradientCircles';
+import logo1 from '../Static/image/logo.svg'
+import Footer from '../components/footer';
 const Contact = () => {
   return (
     <div className='Contact'>
-   
+<div className='logo-section'>
+      <img src={logo1} alt="Logo" className="nav-logo" />
+      </div>
     <div className="Contact-main">
     <GradientCircles />
       <div className="left-side-content">
@@ -26,6 +30,7 @@ const Contact = () => {
         <img src={logo} alt="Campus Ambassador Logo" />
       </div>
     </div>
+    <Footer />
     </div>
   );
 };

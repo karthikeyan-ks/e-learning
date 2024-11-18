@@ -10,6 +10,7 @@ import logo4 from '../Static/image/image copy 2.png'
 import FAQSection from '../components/FAQitem';
 import GradientCircles from '../components/GradientCircles';
 import Footer from '../components/footer';
+import logo10 from '../Static/image/logo.svg'
 const Home = () => {
   // State to manage the order of the images
   const [imageOrder, setImageOrder] = useState(['main', 'top', 'bottom']);
@@ -66,12 +67,11 @@ const Home = () => {
     <div>
       {/* Applying motion to container1 */}
       <GradientCircles />
-      <motion.div
-        className="container1"
-        initial={{ opacity: 0, y: -500 }} // Initial state: hidden and above
-        animate={{ opacity: 1, y: 0 }} // Animate to visible and centered
-        transition={{ duration: 3 }} // Duration of the animation
-      >
+    
+        <div className='logo-section'>
+      <img src={logo10} alt="Logo10" className="nav-logo" />
+        </div>
+  <div className="container1">
         <div className='gradient-container'>
           <div className="circle">
 
@@ -97,7 +97,7 @@ const Home = () => {
             scene="https://prod.spline.design/lHyNMWDWdxR-omhL/scene.splinecode"
           />
         </main>
-      </motion.div>
+      </div>
 
       {/* New Section Below the First */}
       <div className="container">

@@ -3,7 +3,7 @@
     justify-content: flex-start; /* Align items to the start (left side) */
     align-items: center; /* Vertically center both sections */
     width: 100%;
-    padding-top: 10%;
+    padding-top: 0%;
     padding-bottom: 10%;
     top: 10%;/* Full width */
   }
@@ -335,5 +335,24 @@
       cursor: pointer;
       font-size: 1rem;
     }
-    
+    .navlogo {
+      position: absolute;
+      top: 2%;
+      padding-left: 5vh;
+  }
+  .Pro-main {
+      position: relative;
+      width: 35vh;
+  padding-left: 10%;
+      height: 100vh; /* Optional, to fill the viewport */
+  }
+  .logosection img{
+      width: 20%;
+  
+  }
+  
+  .navlogo {
+      width: 150px;
+      height: auto;
+    }
   
