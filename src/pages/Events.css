@@ -1,0 +1,111 @@
+.head1{
+    top: 10%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+.program-main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+   /* Ensures the main container takes the full height of the viewport */
+}
+
+footer.footer2 {
+  margin-top: auto; /* Pushes the footer to the bottom */
+  background-color: transparent;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 100%; /* Adjust to full width */
+}
+h1{
+    font-size: 3rem;
+}
+.footer-content2,
+.footer-bottom2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-divider2 {
+  border-top: 1px solid #555;
+  margin: 20px 0;
+}
+
+.footer-socials2 {
+  display: flex;
+  gap: 0px;
+  font-size: 24px;
+}
+
+.footer-socials2 svg {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-socials2 svg:hover {
+  color: #00aaff;
+}
+
+.footer-copyright2 {
+  font-size: 14px;
+  margin-top: 10px;
+}
+.workshops-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+
+  .workshops-grid {
+    display: flex;
+    justify-content:space-between;
+    gap: 10px; /* Set the gap between cards to 10px */
+    flex-wrap: wrap;
+    padding-left: 20%; 
+    padding-right: 20%;/* Ensure no extra padding inside the grid */
+}
+
+.workshop-card {
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0; /* Ensure no margin on the cards */
+}
+
+  .register-button {
+    background-color: #00bfff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px; /* Rounded corners on top */
+    cursor: pointer;
+    width: 75%; /* Make the button span the full width */
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    z-index: 2;
+    text-align: center;
+  }
+  
+  .register-button:hover {
+    background-color: #009acd;
+  }
+  
+  .image-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .workshop-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  

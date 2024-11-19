@@ -1,12 +1,14 @@
 import React from 'react';
 import './program.css';
+import { useNavigate } from 'react-router-dom';
 import logo from '../Static/image/logo.svg';
 import { FaHome, FaFacebook, FaInstagram } from 'react-icons/fa';
 import { IoIosMail, IoLogoYoutube } from 'react-icons/io';
 import { CiPhone } from 'react-icons/ci';
 import GradientCircles from '../components/GradientCircles';
 import logo2 from '../Static/image/image copy 5.png'
-const events = () => {
+const Programs = () => {
+    const navigate = useNavigate();
   return (
     <div className='program-main'>
       <GradientCircles />
@@ -15,7 +17,7 @@ const events = () => {
       <img src={logo} alt="Logo10" className="nav-logo" />
         </div>
   <div>
-    <h1 className='text3'>Unlock your potential
+    <h1 className='text3'>Unlock your potential<br></br>
     with our Programs</h1>
   </div>
         <div className="rectangle1">
@@ -29,7 +31,7 @@ const events = () => {
   <div className="description-section">
     <p>Your description text goes here. It can be a few sentences describing the content or purpose of this section.</p>
   </div>
-  <button className="arrow-button">
+  <button className="arrow-button" onClick={() => navigate('/events')}>
     →
   </button>
   </div>
@@ -67,4 +69,4 @@ const events = () => {
   );
 };
 
-export default events;
+export default Programs ;
