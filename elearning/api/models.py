@@ -13,7 +13,7 @@ class Event(models.Model):
 class Registration(models.Model):
     firstName = models.CharField(max_length=100)
     lastName = models.CharField(max_length=100)
-    email = models.EmailField()
+    email = models.EmailField(unique=True)
     age = models.IntegerField()
     date = models.DateField()
     phone = models.IntegerField()
