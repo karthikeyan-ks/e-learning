@@ -69,7 +69,14 @@ TEMPLATES = [
         },
     },
 ]
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost:5173',  # Add the URL of your React app
+]
 
+
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:5173',
+]
 WSGI_APPLICATION = 'elearning.wsgi.application'
 CORS_ALLOW_ALL_ORIGINS = True
 
@@ -114,6 +121,15 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
+
+SESSION_COOKIE_SAMESITE = 'None'  # Allow cookies to be sent across different domains
+SESSION_COOKIE_SECURE = True  # Only send cookies over HTTPS (ensure your local dev is using HTTPS)
+CSRF_COOKIE_SAMESITE = 'None'
+CSRF_COOKIE_SECURE = True  # Ensure CSRF cookie is sent over HTTPS
+
+
+CORS_ALLOW_CREDENTIALS = True
+
 
 
 # Static files (CSS, JavaScript, Images)

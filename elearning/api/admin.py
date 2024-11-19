@@ -1,5 +1,5 @@
 from django.contrib import admin
-from api.models import Event
+from api.models import Event, Program, Registration
 
 # Register your models here.
 class EventAdmin(admin.ModelAdmin):
@@ -8,3 +8,5 @@ class EventAdmin(admin.ModelAdmin):
     list_filter = ('name', 'description')
     fields = ('name', 'description','image')
 admin.site.register(Event, EventAdmin)
+admin.site.register(Program)
+admin.site.register(Registration)
