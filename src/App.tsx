@@ -4,7 +4,7 @@ import About from './pages/About';
 import Program from './pages/Program';
 import Contact from './pages/Contact';
 import Events from './pages/Events';
-import Footer from './components/footer';
+import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 // Adjust the path if needed

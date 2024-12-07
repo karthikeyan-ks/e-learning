@@ -5,7 +5,6 @@ import { motion } from 'framer-motion'; // Import motion for animation
 import logo from '../Static/image/image.png';
 import logo1 from '../Static/image/image2.png';
 import logo2 from '../Static/image/image3.png';
-import logo3 from '../Static/image/image4.png';
 import logo4 from '../Static/image/image copy 2.png';
 import FAQSection from '../components/FAQitem';
 import GradientCircles from '../components/GradientCircles'; // Gradient Circles Component
@@ -55,7 +54,7 @@ const Home = () => {
   }, [data]);
 
   return (
-    <div>
+    <div className='main'>
       <div className="logo-section">
         <img src={logo10} alt="Logo10" className="nav-logo" />
       </div>
