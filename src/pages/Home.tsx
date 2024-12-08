@@ -86,7 +86,6 @@ const Home = () => {
         </main>
       </div>
 
-      {/* New Section Below the First */}
       <div className="container">
         <motion.div
           className="main-image"
