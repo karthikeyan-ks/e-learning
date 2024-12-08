@@ -56,12 +56,12 @@
 }
 @media (max-width: 768px) {
   .navbar{
-    max-width: 300px;
+    max-width: 70%;
   }
   .nav-item {
     color: white;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 0.8rem;
     transition: color 0.3s;
     font-family: 'Montserrat', sans-serif;
   }
