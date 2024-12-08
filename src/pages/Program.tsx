@@ -1,5 +1,6 @@
 import React from 'react';
 import './program.css';
+import { useState,useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import logo from '../Static/image/logo.svg';
 import { FaHome, FaFacebook, FaInstagram } from 'react-icons/fa';
@@ -9,6 +10,34 @@ import GradientCircles from '../components/GradientCircles';
 import logo2 from '../Static/image/image copy 5.png'
 const Programs = () => {
     const navigate = useNavigate();
+    type ProgramElement = {
+      name: string;
+      description: string;
+      image: string;
+    };
+    const [data, setData] = useState<ProgramElement[]>([]);
+  const [program, setProgram] = useState<JSX.Element[]>([]);
+
+  useEffect(() => {
+    fetch('http://127.0.0.1:8000/api/data/')
+      .then((response) => response.json())
+      .then((data) => setData(data))
+      .catch((error) => console.error('Error fetching data:', error));
+
+  }, []);
+
+  useEffect(() => {
+    data.forEach((element) => {
+      const image = 'http://127.0.0.1:8000' + element.image;
+      const elem = (
+        <div className="rect">
+          <img src={image} alt="Workshop Logo" />
+          <p>{element.name}</p>
+        </div>
+      );
+      setProgram((prev) => [...prev, elem]);
+    });
+  }, [data]);
   return (
     <div className='program-main'>
       <GradientCircles />
