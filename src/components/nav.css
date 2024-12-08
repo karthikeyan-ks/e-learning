@@ -54,3 +54,22 @@
 .nav-item:hover {
   color: #aaaaaa;
 }
+@media (max-width: 768px) {
+  .navbar{
+    max-width: 300px;
+  }
+  .nav-item {
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: color 0.3s;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0 3rem 0 3rem;
+  }
+}
