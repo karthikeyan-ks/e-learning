@@ -59,7 +59,8 @@ def get_data(request):
         {
         "name" : event.name,
         "description" : event.description,
-        "image" : event.image.url
+        "image" : event.image.url,
+        "program": event.program.name
         }
         for event in events
     ]
