@@ -82,10 +82,7 @@ const Programs = () => {
         <div className='program-container'>
         <Form/>
         </div>
-
-      </div>
-
-      <footer className="footer">
+        <footer className="footer">
         <div className="footer-content">
           <div className="footer-logo">
             {/* Replace with the actual logo image or SVG */}
@@ -110,6 +107,9 @@ const Programs = () => {
           </p>
         </div>
       </footer>
+      </div>
+
+      
     </div>
   );
 };
