@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-+mbddrd!dz37=s7xm3d8fu5id)6y5fyai@(bh0rr1m)j8xws%e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 
 
 # Application definition
@@ -78,6 +78,7 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
 ]
 WSGI_APPLICATION = 'elearning.wsgi.application'
+
 CORS_ALLOW_ALL_ORIGINS = True
 
 

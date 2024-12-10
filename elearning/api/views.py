@@ -2,7 +2,7 @@ from django.shortcuts import render
 from .models import Event, Registration
 # Create your views here.
 from django.middleware.csrf import get_token
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
 from django.views.decorators.csrf import ensure_csrf_cookie
 from django.views.decorators.http import require_POST
 from django.db import IntegrityError
@@ -51,6 +51,9 @@ def registration(request):
 def csrf_token(request):
     csrf_token = get_token(request)
     return JsonResponse({'csrfToken': csrf_token})
+
+def home(request):
+    return HttpResponse("<h1>hai</h1>")
 
 def get_data(request):
     events = Event.objects.all()
