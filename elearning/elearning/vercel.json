@@ -1,16 +1,14 @@
 {
     "builds": [
       {
-        "src": "manage.py",
-        "use": "@vercel/python",
-        "config": { "maxLambdaSize": "15mb" }
+        "src": "elearning/wsgi.py",
+        "use": "@vercel/python"
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "manage.py"
+        "dest": "elearning/wsgi.py"
       }
     ]
-  }
-  
+}

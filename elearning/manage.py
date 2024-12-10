@@ -2,8 +2,6 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-from django.core.asgi import get_asgi_application
-application = get_asgi_application()
 
 
 def main():
