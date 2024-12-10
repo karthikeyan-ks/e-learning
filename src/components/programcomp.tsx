@@ -1,8 +1,12 @@
-import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import './programcoun.css';
+interface ProgramCardProps {
+  title: string;
+  image: string;
+  description: string;
+}
 
-const ProgramCard = ({ title, image, description }) => (
+const ProgramCard: React.FC<ProgramCardProps> = ({ title, image, description }) => (
   <div className="program-card">
     <div className="card-image-container">
       <img src={image} alt={title} className="card-image" />
@@ -16,7 +20,6 @@ const ProgramCard = ({ title, image, description }) => (
     </div>
   </div>
 );
-
 const Programcon = () => {
   const programs = [
     {

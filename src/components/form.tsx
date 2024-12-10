@@ -24,7 +24,7 @@ const Form = () => {
       .catch(error => console.error('Error fetching CSRF token:', error));
   }, []);
 
-  const handleButton = async (e) => {
+  const handleButton = async (e:any) => {
     e.preventDefault();
 
     const data = {

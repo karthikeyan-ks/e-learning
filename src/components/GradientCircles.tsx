@@ -1,4 +1,3 @@
-import React from 'react';
 import './GradientCircles.css'; // Path must match your project structure
 
 const GradientCircles = () => {

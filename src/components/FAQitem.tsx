@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa'; // Importing chevron icons
 import './FAQ.css'; // Import the CSS file
 
 const FAQitem = () => {
   const [isOpen, setIsOpen] = useState(null);
 
-  const toggleAnswer = (index) => {
+  const toggleAnswer = (index:any) => {
     setIsOpen(isOpen === index ? null : index); // Toggle state to show/hide answer
   };
 

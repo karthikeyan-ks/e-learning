@@ -1,4 +1,3 @@
-import React from 'react';
 import Form from '../components/form';
 import './contact.css';
 import logo from '../Static/image/image copy 7.png';

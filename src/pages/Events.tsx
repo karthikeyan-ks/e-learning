@@ -1,9 +1,7 @@
-import React from 'react';
 import GradientCircles from "../components/GradientCircles";
 import logo from '../Static/image/logo.svg';
 import './Events.css';
 import logo1 from '../Static/image/workshop.png'
-import Footer from "../components/footer";
 import { FaHome, FaFacebook, FaInstagram } from 'react-icons/fa';
 import { IoIosMail, IoLogoYoutube } from 'react-icons/io';
 import { CiPhone } from 'react-icons/ci';

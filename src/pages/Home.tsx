@@ -32,7 +32,7 @@ const Home = () => {
     const interval = setInterval(() => {
       setImageOrder((prevOrder) => {
         const newOrder = [...prevOrder];
-        newOrder.push(newOrder.shift()); // Rotate the order
+        newOrder.push(newOrder.shift()!); // Rotate the order
         return newOrder;
       });
     }, 3000); // Update every 3 seconds

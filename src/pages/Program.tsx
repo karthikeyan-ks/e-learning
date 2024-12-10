@@ -67,17 +67,17 @@ const Programs = () => {
           <h1 className='text3'>Unlock your potential<br></br>
             with our Programs</h1>
         </div>
-        <h1>Workshops</h1>
+        <h1 className='heading'>Workshops</h1>
         <div className='program-container'>
           
         {program}
         </div>
-        <h1>Internships</h1>
+        <h1 className='heading'>Internships</h1>
         <div className='program-container'>
         
         {program1}
         </div>
-        <h1>Campus Recrutment</h1>
+        <h1 className='heading'>Campus Recrutment</h1>
         <br></br>
         <div className='program-container'>
         <Form/>

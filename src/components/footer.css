@@ -97,3 +97,19 @@ body, html {
   display: block;
 }
 
+
+@media (max-width: 768px) {
+  .footer {
+    width: 90vw;
+    padding: 0px;
+  }
+  .footer-logo .logo-img{
+    width: 40px;
+  }
+  p{
+    font-size: 1rem;
+  }
+  h3{
+    font-size: 2rem;
+  }
+}

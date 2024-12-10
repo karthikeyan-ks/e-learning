@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import './nav.css';
-import logo from '../Static/image/logo.svg'
 const Nav = () => {
   return (
     <div className="nav-wrapper">

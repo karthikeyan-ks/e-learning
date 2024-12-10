@@ -1,4 +1,3 @@
-import React from 'react';
 import './footer.css';
 import { FaHome, FaFacebook, FaInstagram } from 'react-icons/fa';
 import { IoIosMail, IoLogoYoutube } from 'react-icons/io';

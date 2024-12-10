@@ -7,6 +7,7 @@
     padding-left: 5%;
      margin: auto;
   }
+  
 
   /* Main Heading */
   .main-heading {
@@ -70,3 +71,12 @@
     margin-bottom: 20px;
     line-height: 1.6;
   }
+
+@media (max-width: 768px) {
+  .text-section{
+    width: 90%;
+  }
+  html, body{
+    overflow-x: hidden;
+  }
+}

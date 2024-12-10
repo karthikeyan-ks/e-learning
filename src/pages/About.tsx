@@ -1,4 +1,3 @@
-import React from 'react';
 import './AboutUs.css'; // Ensure you create this CSS file
 import logo from '../Static/image/image copy 3.png';
 import logo1 from '../Static/image/image copy 4.png'
