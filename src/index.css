@@ -6,7 +6,7 @@
     overflow-x: hidden;
 
   
-  color-scheme: light dark;
+  color-scheme: dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #0a0a0a;
   overflow-x: hidden;
@@ -58,10 +58,22 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #213547;
+    background-color: #000;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: #000;
   }
   a:hover {
     color: #747bff;
