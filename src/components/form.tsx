@@ -13,7 +13,7 @@ const Form = () => {
   const [college, setCollege] = useState('')
 
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/api/csrf/', {
+    fetch('https://karthikeyanks.pythonanywhere.com/api/csrf/', {
       method: 'GET',
       credentials: 'include',  // Ensure cookies are sent
     })
@@ -32,7 +32,7 @@ const Form = () => {
     };
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/registration/', {
+      const response = await fetch('https://karthikeyanks.pythonanywhere.com/api/registration/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -21,7 +21,7 @@ const Programs = () => {
   const [program1, setProgram1] = useState<JSX.Element[]>([]);
 
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/api/data/')
+    fetch('https://karthikeyanks.pythonanywhere.com/api/data/')
       .then((response) => response.json())
       .then((data) => setData(data))
       .catch((error) => console.error('Error fetching data:', error));
@@ -31,7 +31,7 @@ const Programs = () => {
     console.log(data);
 
     data.forEach((element) => {
-      const image = 'http://127.0.0.1:8000' + element.image;
+      const image = 'https://karthikeyanks.pythonanywhere.com/' + element.image;
       const elem = (
         <div className="rectangle1">
           <div className="image-section">

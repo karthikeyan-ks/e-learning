@@ -24,7 +24,7 @@ const Home = () => {
   const [program, setProgram] = useState<JSX.Element[]>([]);
 
   useEffect(() => {
-    fetch('https://karthikeyanks.pythonanywhere.com//api/data/')
+    fetch('https://karthikeyanks.pythonanywhere.com/api/data/')
       .then((response) => response.json())
       .then((data) => setData(data))
       .catch((error) => console.error('Error fetching data:', error));
